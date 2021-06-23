@@ -26,7 +26,7 @@ async def on_message(message):
             text = "\n" + split[1]
             file.write(text)
             await message.delete()
-            await message.channel.send(f"Successfully added link!", delete_after=5)
+            await message.channel.send("Successfully added link!", delete_after=5)
             file.close()
 
 
